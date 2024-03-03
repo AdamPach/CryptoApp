@@ -17,7 +17,7 @@ public class TestPriceService : ICryptoPriceService
 
         _requests++;
 
-        price = price + (_requests * 100);
+        price = price + (_requests * 42);
 
         return Task.FromResult(price.ToString());
     }
