@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CryptoApp.Views.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="eth_btc.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a race car number eight" />
+
+            <Label
+                Text="BTC and ETH price app"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Label
+                HorizontalTextAlignment="Center"
+                FontSize="18">
+                This app can check real time prices for these curencies!
+            </Label>
+
+            <Button
+                x:Name="BtcButton"
+                Text="What crypto curency is the best!"
+                Clicked="BtcButton_Clicked"
+                HorizontalOptions="Fill"/>
+            
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
